@@ -1,0 +1,28 @@
+package negocio.factoriaSA;
+
+import negocio.cliente.SACliente;
+import negocio.cliente.SAClienteImp;
+import negocio.compra.SACompra;
+import negocio.compra.SACompraImp;
+import negocio.tipoVivienda.SATipoVivienda;
+import negocio.tipoVivienda.SATipoViviendaImp;
+
+public class FactoriaSAImp extends FactoriaSA {
+
+	@Override
+	public SACliente generarSACliente() {
+		return new SAClienteImp();
+	}
+
+	@Override
+	public SATipoVivienda generarSATipoVivienda() {
+		return new SATipoViviendaImp();
+	}
+
+	@Override
+	public SACompra generarSACompras() {
+		return new SACompraImp();
+	}
+
+
+}
